@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-const PORT = 3001;
+const PORT = 3000;
 
 // Los middlewares
 app.use(cors());
@@ -216,3 +216,5 @@ app.get("/api/productos/:id", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+
+module.exports = app;
